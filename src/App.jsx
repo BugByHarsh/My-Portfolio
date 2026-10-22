@@ -2,7 +2,6 @@ import {useEffect} from 'react';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
-import Services from './components/Services.jsx';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
@@ -27,5 +26,18 @@ export default function App(){
   }
   return()=>{window.removeEventListener('scroll',updateProgress);observer?.disconnect();cleanup.forEach(fn=>fn());};
  },[]);
- return <><div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="noise" aria-hidden="true"/><div className="scroll-progress" aria-hidden="true"><span id="progress-bar"/></div><Navbar/><main className="min-h-screen"><Hero/><About/><Services/><Projects/><Skills/><Contact/></main><Footer/></>;
+ return <><div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="noise" aria-hidden="true"/><div className="scroll-progress" aria-hidden="true"><span id="progress-bar"/></div><Navbar/><main className="min-h-screen"><Hero/><About/><section className="section-shell services-section" id="services">
+   <div className="section-heading reveal"><span className="section-index">02 / SERVICES</span><h2>From idea to<br/><span className="gradient-text">launch.</span></h2><p>Ways I can help turn a product idea into something useful and reliable.</p></div>
+   <div className="services-layout"><div className="services-grid">
+    <article className="service-card glass-panel reveal"><div className="service-top"><span className="service-icon">01</span><span className="service-number">SERVICE / 01</span></div><h3>Web Development</h3><p>Modern, responsive websites with fast, scalable architecture and clean interfaces.</p><div className="tag-row"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>Laravel</span><span>MySQL</span></div></article>
+    <article className="service-card glass-panel reveal"><div className="service-top"><span className="service-icon">02</span><span className="service-number">SERVICE / 02</span></div><h3>App Development</h3><p>Cross-platform mobile apps with smooth performance and a thoughtful user experience.</p><div className="tag-row"><span>React Native</span><span>Expo</span><span>Firebase</span><span>REST APIs</span></div></article>
+    <article className="service-card glass-panel reveal"><div className="service-top"><span className="service-icon">03</span><span className="service-number">SERVICE / 03</span></div><h3>API Development</h3><p>Secure, scalable backend APIs for modern web and mobile applications.</p><div className="tag-row"><span>Node.js</span><span>Express</span><span>Laravel</span><span>JWT</span><span>REST API</span></div></article>
+    <article className="service-card glass-panel reveal"><div className="service-top"><span className="service-icon">04</span><span className="service-number">SERVICE / 04</span></div><h3>Hosting &amp; Deployment</h3><p>Reliable deployment pipelines and optimized production hosting.</p><div className="tag-row"><span>Vercel</span><span>AWS</span><span>Nginx</span><span>cPanel</span></div></article>
+   </div><div className="process-panel reveal"><span className="panel-kicker">A CLEAR, COLLABORATIVE PROCESS</span><h3>How I work</h3><p className="process-intro">A straightforward workflow, so you know what we're solving and why.</p><div className="process-list">
+    <article className="process-step"><span className="process-number">01</span><div><h4>Understand</h4><p>Explore your goals, requirements, and the people you want to reach.</p></div></article>
+    <article className="process-step"><span className="process-number">02</span><div><h4>Plan</h4><p>Choose the right architecture, technology, and a clear direction.</p></div></article>
+    <article className="process-step"><span className="process-number">03</span><div><h4>Build</h4><p>Create clean, scalable software with regular progress updates.</p></div></article>
+    <article className="process-step"><span className="process-number">04</span><div><h4>Deploy &amp; support</h4><p>Launch, refine, and help your product stay reliable.</p></div></article>
+   </div><a className="text-link" href="#contact">Discuss a project <span>↗</span></a></div></div>
+  </section><Projects/><Skills/><Contact/></main><Footer/></>;
 }
