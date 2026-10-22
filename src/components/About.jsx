@@ -1,4 +1,4 @@
-import {Compass,Layers3,Lightbulb,Users,BriefcaseBusiness,Code2,Rocket} from 'lucide-react';
+import {Compass,Layers3,Lightbulb,Users,Briefcase,Rocket} from 'lucide-react';
 import SectionHeading from './SectionHeading.jsx';
 const principles=[
  {number:'01',title:'Full-stack development',description:'From frontend experiences to backend logic and APIs.',Icon:Layers3},
@@ -16,7 +16,7 @@ export default function About(){return <section className="section-shell about-s
    <a className="text-link" href="https://www.linkedin.com/in/upadhyay-harsh9756" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a><div className="panel-orb" aria-hidden="true"/>
   </article>
   <div className="about-side">
-   <article className="glass-panel principle-card reveal"><span className="mini-number">2025 — NOW</span><div className="principle-icon"><BriefcaseBusiness size={19}/></div><h3>Full Stack Developer · Ezzstar</h3><p>Building web platforms and APIs with React, Node.js, Express, and MongoDB.</p></article>
+   <article className="glass-panel principle-card reveal"><span className="mini-number">2025 — NOW</span><div className="principle-icon"><Briefcase size={19}/></div><h3>Full Stack Developer · Ezzstar</h3><p>Building web platforms and APIs with React, Node.js, Express, and MongoDB.</p></article>
    <article className="glass-panel principle-card reveal"><span className="mini-number">2023 — NOW</span><div className="principle-icon"><Rocket size={19}/></div><h3>Founder · CSS Arena</h3><p>An interactive platform for web development and CSS design challenges.</p></article>
    {principles.slice(0,1).map(({number,title,description,Icon})=><article className="glass-panel principle-card reveal" key={number}><span className="mini-number">{number}</span><div className="principle-icon"><Icon size={19}/></div><h3>{title}</h3><p>{description}</p></article>)}
   </div>
