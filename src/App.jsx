@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
+import Services from './components/Services.jsx';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
@@ -26,5 +27,5 @@ export default function App(){
   }
   return()=>{window.removeEventListener('scroll',updateProgress);observer?.disconnect();cleanup.forEach(fn=>fn());};
  },[]);
- return <><div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="noise" aria-hidden="true"/><div className="scroll-progress" aria-hidden="true"><span id="progress-bar"/></div><Navbar/><main className="min-h-screen"><Hero/><About/><Projects/><Skills/><Contact/></main><Footer/></>;
+ return <><div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="noise" aria-hidden="true"/><div className="scroll-progress" aria-hidden="true"><span id="progress-bar"/></div><Navbar/><main className="min-h-screen"><Hero/><About/><Services/><Projects/><Skills/><Contact/></main><Footer/></>;
 }
