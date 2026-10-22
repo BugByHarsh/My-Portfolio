@@ -12,8 +12,8 @@ export default function Hero(){
    </div>
    <div className="hero-meta">
     <span><span className="meta-dot"/> 10+ projects</span>
-    <span><Code2 size={13}/> 2+ years building</span>
-    <span><MapPin size={13}/> Based in India</span>
+    <span><Code2 size={13}/> 2+ yrs experience</span>
+    <span><MapPin size={13}/> 5 clients</span>
    </div>
    <div className="hero-socials">
     <a href="https://github.com/BugByHarsh" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={17}/> GitHub <ArrowUpRight size={12}/></a>
