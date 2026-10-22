@@ -1,4 +1,4 @@
-import {ArrowDown,ArrowDownRight,ArrowUpRight,Code2,Cuboid,MapPin,Github,Linkedin} from 'lucide-react';
+import {ArrowDown,ArrowDownRight,ArrowUpRight,Code2,Cuboid,Github,Linkedin,Layers3} from 'lucide-react';
 const portrait = 'https://raw.githubusercontent.com/BugByHarsh/Portfolio-V2--React/main/public/image.webp';
 export default function Hero(){
  return <section className="hero section-shell" id="home">
@@ -11,9 +11,9 @@ export default function Hero(){
     <a className="button button-quiet" href="#contact">Let's talk <ArrowDownRight size={15}/></a>
    </div>
    <div className="hero-meta">
-    <span><span className="meta-dot"/> 10+ projects</span>
-    <span><Code2 size={13}/> 2+ yrs experience</span>
-    <span><MapPin size={13}/> 5 clients</span>
+    <span><span className="meta-dot"/> Web platforms</span>
+    <span><Code2 size={13}/> APIs & backend</span>
+    <span><Layers3 size={13}/> Mobile experiences</span>
    </div>
    <div className="hero-socials">
     <a href="https://github.com/BugByHarsh" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={17}/> GitHub <ArrowUpRight size={12}/></a>
@@ -31,7 +31,7 @@ export default function Hero(){
    </article>
    <div className="float-chip chip-code"><span className="chip-icon"><Code2 size={17}/></span><span><small>WORKING AT</small><b>Ezzstar</b></span></div>
    <div className="float-chip chip-stack"><span className="chip-icon violet"><Cuboid size={17}/></span><span><small>FOUNDED</small><b>CSS Arena</b></span></div>
-   <div className="stage-index">01 <span>—</span> 05</div>
+   <div className="stage-index">01 <span>—</span> 06</div>
   </div>
   <a className="scroll-cue" href="#about"><span className="scroll-mouse"><ArrowDown size={10}/></span> SCROLL TO EXPLORE</a>
  </section>;
