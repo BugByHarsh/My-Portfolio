@@ -1,18 +1,65 @@
-import shopyImage from '../../images/shopy.png';
-import blogImage from '../../images/blog.jpg';
-import recordBookImage from '../../images/rb.png';
-import todoImage from '../../images/todo.jpg';
-import ticTacToeImage from '../../images/tic.jpg';
-
 export const projects = [
- {number:'01',name:'TrendCraze',type:'FULL-STACK',description:'An e-commerce experience with product browsing, cart management and Razorpay payment integration.',technologies:['Django','Python','Bootstrap','Razorpay'],image:shopyImage,imageAlt:'TrendCraze e-commerce project preview',source:'https://github.com/harsh9756/django-Ecommerce',featured:true},
- {number:'02',name:'BlogBeast',type:'WEB APP',description:'A publishing platform for creating accounts, sharing articles and discovering ideas across topics.',technologies:['PHP','Bootstrap','MySQL'],image:blogImage,imageAlt:'BlogBeast publishing platform preview',source:'https://github.com/harsh9756/BlogApp-php'},
- {number:'03',name:'Record Book',type:'DESKTOP APP',description:'A Python desktop user-management tool with secure login and add, update, search and delete workflows.',technologies:['Python','Tkinter','SQLite'],image:recordBookImage,imageAlt:'Record Book desktop application preview',source:'https://github.com/harsh9756/RecorBook---Python-tkinter'},
- {number:'04',name:'Todo App',type:'REACT APP',description:'A focused task manager for adding, editing, completing and deleting everyday tasks.',technologies:['React','Tailwind CSS'],image:todoImage,imageAlt:'React to-do application preview',source:'https://github.com/harsh9756/ToDo-App-React'},
- {number:'05',name:'Tic-Tac-Toe',type:'MINI GAME',description:'A classic two-player game built with React, with an interactive 3×3 board and win-state logic.',technologies:['React','JavaScript'],image:ticTacToeImage,imageAlt:'Tic-Tac-Toe game preview',source:'https://github.com/harsh9756/Tic-Tac-Toe--React',wide:true},
+  {
+    number: "01",
+    name: "Ezzstar Social",
+    type: "WEB3 PLATFORM",
+    description: "A Web3-powered social platform for manga enthusiasts, with NFT-based ownership, a dynamic social feed, tokenized interactions, and crypto wallet integration.",
+    technologies: ["React", "Web3", "Node.js", "MongoDB", "Wagmi"],
+    image: "https://raw.githubusercontent.com/BugByHarsh/Portfolio-V2--React/main/public/projects/social.png",
+    imageAlt: "Ezzstar Social platform preview",
+    source: null,
+    live: "https://ezzstar.space",
+    featured: true
+  },
+  {
+    number: "02",
+    name: "My Schedule App",
+    type: "MOBILE APP",
+    description: "A cross-platform task and schedule app for organizing tasks, tracking events, and managing the day, built with React Native and Expo.",
+    technologies: ["React Native", "Expo"],
+    image: "https://raw.githubusercontent.com/BugByHarsh/Portfolio-V2--React/main/public/projects/schedule.png",
+    imageAlt: "My Schedule App preview",
+    source: "https://github.com/BugByHarsh/Tasks-app--React-Native",
+    live: "https://tasks-app-react-native.vercel.app/"
+  },
+  {
+    number: "03",
+    name: "CSS Arena",
+    type: "DEVELOPER PLATFORM",
+    description: "A real-time competitive platform where developers battle using pure CSS, with live rendering, instant scoring, multiplayer rooms, and daily design challenges.",
+    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
+    image: "https://raw.githubusercontent.com/BugByHarsh/Portfolio-V2--React/main/public/projects/cssarena.png",
+    imageAlt: "CSS Arena developer platform preview",
+    source: "https://github.com/BugByHarsh/css-arena",
+    live: "https://css-arena.vercel.app"
+  },
+  {
+    number: "04",
+    name: "Weblum",
+    type: "DIGITAL PRODUCT",
+    description: "A modern digital photo album experience for preserving, organizing, and sharing meaningful memories in a beautiful, accessible format.",
+    technologies: ["React", "Node.js", "Tailwind CSS"],
+    image: "https://raw.githubusercontent.com/BugByHarsh/Portfolio-V2--React/main/public/projects/weblum.png",
+    imageAlt: "Weblum digital album preview",
+    source: "https://github.com/BugByHarsh/weblum",
+    live: "https://weblum.in"
+  },
+  {
+    number: "05",
+    name: "Convo",
+    type: "REAL-TIME WEB APP",
+    description: "A real-time chat application with JWT authentication, multi-room conversations, and live user presence for fast, seamless communication.",
+    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
+    image: "https://raw.githubusercontent.com/BugByHarsh/Portfolio-V2--React/main/public/projects/convo.png",
+    imageAlt: "Convo real-time chat application preview",
+    source: "https://github.com/BugByHarsh/Chat-app-Frontend",
+    live: "https://we-convo.vercel.app/"
+  }
 ];
-export const skills=[
- {number:'01',title:'Frontend',items:['HTML5','CSS3','JavaScript','React','Redux','Bootstrap','Tailwind CSS']},
- {number:'02',title:'Backend',items:['Python','PHP','Node.js','Express','Django']},
- {number:'03',title:'Data & tools',items:['MongoDB','MySQL','SQLite','GitHub']},
+
+export const skills = [
+  { number: "01", title: "Frontend", items: ["JavaScript", "React", "Tailwind CSS"] },
+  { number: "02", title: "Backend", items: ["Node.js", "Express.js", "Laravel", "PHP", "Python"] },
+  { number: "03", title: "Mobile", items: ["React Native", "Expo"] },
+  { number: "04", title: "Data & tools", items: ["MongoDB", "MySQL", "Git", "GitHub"] }
 ];
