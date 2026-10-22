@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {ArrowUpRight,Menu,X} from 'lucide-react';
-const links=[{href:'#about',label:'About'},{href:'#services',label:'Services'},{href:'#projects',label:'Projects'},{href:'#skills',label:'Toolkit'},{href:'#contact',label:'Contact'}];
+const links=[{href:'#about',label:'About'},{href:'#services',label:'Services'},{href:'#experience',label:'Experience'},{href:'#projects',label:'Projects'},{href:'#skills',label:'Toolkit'},{href:'#contact',label:'Contact'}];
 export default function Navbar(){
  const [open,setOpen]=useState(false),close=()=>setOpen(false);
  return <header className="topbar">
