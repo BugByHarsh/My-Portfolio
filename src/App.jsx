@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
+import Services from './components/Services.jsx';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
@@ -22,9 +23,9 @@ export default function App(){
     card.addEventListener('pointermove',onMove);card.addEventListener('pointerleave',onLeave);cleanup.push(()=>{card.removeEventListener('pointermove',onMove);card.removeEventListener('pointerleave',onLeave);});
    });
    const stage=document.getElementById('spatial-stage');
-   if(stage){const onMove=event=>{const rect=stage.getBoundingClientRect();stage.style.setProperty('--pointer-x',`${(((event.clientX-rect.left)/rect.width-.5)*16).toFixed(1)}px`);stage.style.setProperty('--pointer-y',`${(((event.clientY-rect.top)/rect.height-.5)*16).toFixed(1)}px`);};const onLeave=()=>{stage.style.setProperty('--pointer-x','0px');stage.style.setProperty('--pointer-y','0px');};stage.addEventListener('pointermove',onMove);stage.addEventListener('pointerleave',onLeave);cleanup.push(()=>{stage.removeEventListener('pointermove',onMove);stage.removeEventListener('pointerleave',onLeave);});}
+   if(stage){const onMove=event=>{const rect=stage.getBoundingClientRect();stage.style.setProperty('--pointer-x',`${(((event.clientX-rect.left)/rect.width-.5)*16).toFixed(1)}px`);stage.style.setProperty('--pointer-y',`${(((event.clientY-rect.top)/rect.height-.5)*16).toFixed(1)}px`);};const onLeave=()=>{stage.style.setProperty('--pointer-x','0px');stage.style.setProperty('--pointer-y','0px');};stage.addEventListener('pointermove',onMove);stage.addEventListener('pointerleave',onLeave);cleanup.push(()=>{stage.removeEventListener('pointermove',onMove);stage.removeEventListener('pointerleave',onLeave);}}
   }
   return()=>{window.removeEventListener('scroll',updateProgress);observer?.disconnect();cleanup.forEach(fn=>fn());};
  },[]);
- return <><div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="noise" aria-hidden="true"/><div className="scroll-progress" aria-hidden="true"><span id="progress-bar"/></div><Navbar/><main className="min-h-screen"><Hero/><About/><Projects/><Skills/><Contact/></main><Footer/></>;
+ return <><div className="ambient ambient-one" aria-hidden="true"/><div className="ambient ambient-two" aria-hidden="true"/><div className="noise" aria-hidden="true"/><div className="scroll-progress" aria-hidden="true"><span id="progress-bar"/></div><Navbar/><main className="min-h-screen"><Hero/><About/><Services/><Projects/><Skills/><Contact/></main><Footer/></>;
 }
