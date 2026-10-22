@@ -1,4 +1,4 @@
-import {ArrowUpRight,BriefcaseBusiness,Code2,Layers3} from 'lucide-react';
+import {ArrowUpRight,BriefcaseBusiness,Layers3} from 'lucide-react';
 import SectionHeading from './SectionHeading.jsx';
 
 const roles=[
