@@ -1,0 +1,6 @@
+import {Code2,Database,Braces,Atom,FileCode2} from 'lucide-react';
+import SectionHeading from './SectionHeading.jsx';
+import {skills} from '../data/projects.js';
+export default function Skills(){return <section className="section-shell skills-section" id="skills"><SectionHeading index="04 / TOOLKIT" title="Tools are the medium." accent="Ideas are the point." description="The technologies I use to build, ship, and improve digital products."/>
+ <div className="skills-layout"><div className="skill-orbit reveal" aria-label="Technology orbit illustration"><div className="orbit-ring ring-one"/><div className="orbit-ring ring-two"/><div className="orbit-center"><Code2 size={28}/><span>TOOLKIT</span></div><span className="orbit-node node-html"><FileCode2 size={18}/></span><span className="orbit-node node-js"><Braces size={19}/></span><span className="orbit-node node-react"><Atom size={21}/></span><span className="orbit-node node-python">Py</span><span className="orbit-node node-db"><Database size={18}/></span></div>
+ <div className="skill-groups reveal">{skills.map(group=><div className="skill-group" key={group.number}><div className="skill-group-title"><span>{group.number}</span><h3>{group.title}</h3></div><div className="tag-row">{group.items.map(item=><span key={item}>{item}</span>)}</div></div>)}</div></div></section>}

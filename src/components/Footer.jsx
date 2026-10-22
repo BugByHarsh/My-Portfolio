@@ -1,0 +1,2 @@
+import {ArrowUp} from 'lucide-react';
+export default function Footer(){return <footer className="footer"><a className="brand" href="#home" aria-label="Back to top"><span className="brand-mark">H<span>.</span></span></a><p>Designed with curiosity. Built with intention.</p><span>© {new Date().getFullYear()} Harsh Upadhyay</span><a className="back-top" href="#home" aria-label="Back to top"><ArrowUp size={16}/></a></footer>}

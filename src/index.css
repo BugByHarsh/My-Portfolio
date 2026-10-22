@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../css/style.css";
+
+/* React component refinements layered over the approved spatial stylesheet. */
+.nav-cta{display:flex;align-items:center;gap:6px;padding:8px 11px;border:1px solid rgba(138,245,231,.2);border-radius:10px;color:var(--cyan);font-size:10px;white-space:nowrap;transition:background .2s ease,border-color .2s ease}
+.nav-cta:hover{background:rgba(138,245,231,.06);border-color:rgba(138,245,231,.4)}
+.contact-link-icon{display:grid;place-items:center;width:39px;height:39px;flex-shrink:0;border-radius:12px;color:var(--cyan);background:rgba(138,245,231,.08);border:1px solid rgba(138,245,231,.12)}
+.contact-links a .link-end{margin-left:auto;color:#6d7b95;flex-shrink:0}
+@media(max-width:680px){.nav-cta{display:none}}
